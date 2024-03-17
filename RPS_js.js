@@ -9,7 +9,7 @@ function getPlayerChoice (playerChoice) {
         return "scissors"
     }
 }
-console.log (playerChoice)
+
 function getComputerChoice () {
     let randomNumber = Math.floor(Math.random() * 3) + 1;
     if (randomNumber === 1) {
@@ -22,7 +22,7 @@ function getComputerChoice () {
         
 }
 
-const pChoice = getPlayerChoice ();
+const pChoice = getPlayerChoice (playerChoice);
 const cChoice = getComputerChoice ();
 
 function playRound (pChoice,cChoice) {
