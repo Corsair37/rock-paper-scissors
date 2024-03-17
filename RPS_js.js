@@ -22,21 +22,21 @@ function getComputerChoice () {
         
 }
 
-let getPlayerChoice = getPlayerChoice ();
-let getComputerChoice = getComputerChoice ();
+const pChoice = getPlayerChoice ();
+const cChoice = getComputerChoice ();
 
-function playRound (getComputerChoice,getPlayerChoice) {
-    if (getplayerChoice === "rock" && getComputerChoice === "Paper") {
+function playRound (pChoice,cChoice) {
+    if (pChoice === "rock" && cChoice === "Paper") {
         return "Nice try, goomba, but paper beats rock."
-    } else if (getPlayerChoice === "rock" && getComputerChoice === "Scissors") {
+    } else if (pChoice === "rock" && cChoice === "Scissors") {
         return "Good stuff, choom. Rock beats scissors."
-    } else if (getPlayerChoice === "paper" && getComputerChoice === "Rock") {
+    } else if (pChoice === "paper" && cChoice === "Rock") {
         return "Preem, choom. Paper beats rock."
-    } else if (getPlayerChoice === "paper" && getComputerChoice === "Scissors") {
+    } else if (gpChoice === "paper" && cChoice === "Scissors") {
         return "Damn. Nice try, but scissors beats paper."
-    } else if (getPlayerChoice === "scissors" && getComputerChoice === "Rock") {
+    } else if (pChoice === "scissors" && cChoice === "Rock") {
         return "Rest in pizza. Rock beats paper, choom."
-    } else if (getPlayerChoice === "scissors" && getComputerChoice === "Paper") {
+    } else if (pChoice === "scissors" && cChoice === "Paper") {
         return "Nice, choom. Scissors beat Paper"
     }
 }
