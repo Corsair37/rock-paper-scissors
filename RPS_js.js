@@ -40,4 +40,6 @@ function playRound (pChoice,cChoice) {
         return "Nice, choom. Scissors beat Paper"
     }
 }
- console.log(playRound())
+
+let result = playRound (pChoice,cChoice);
+console.log(result)
