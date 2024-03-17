@@ -1,6 +1,6 @@
 let playerChoice = prompt("Rock, Paper, or Scissors?")
 function getPlayerChoice (playerChoice) {
-    let shortstack = playerChoice.toLowerCase("");
+    let shortstack = playerChoice.toLowerCase();
     if (shortstack = "rock") {
         return "rock"
     } else if (shortstack = "paper") {
@@ -9,7 +9,7 @@ function getPlayerChoice (playerChoice) {
         return "scissors"
     }
 }
-
+console.log (playerChoice)
 function getComputerChoice () {
     let randomNumber = Math.floor(Math.random() * 3) + 1;
     if (randomNumber === 1) {
