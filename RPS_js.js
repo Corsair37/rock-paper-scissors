@@ -32,7 +32,7 @@ function playRound (pChoice,cChoice) {
         return "Good stuff, choom. Rock beats scissors."
     } else if (pChoice === "paper" && cChoice === "Rock") {
         return "Preem, choom. Paper beats rock."
-    } else if (gpChoice === "paper" && cChoice === "Scissors") {
+    } else if (pChoice === "paper" && cChoice === "Scissors") {
         return "Damn. Nice try, but scissors beats paper."
     } else if (pChoice === "scissors" && cChoice === "Rock") {
         return "Rest in pizza. Rock beats paper, choom."
