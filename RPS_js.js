@@ -22,8 +22,8 @@ function getComputerChoice () {
         
 }
 
-const pChoice = getPlayerChoice (playerChoice);
-const cChoice = getComputerChoice ();
+let pChoice = getPlayerChoice (playerChoice);
+let cChoice = getComputerChoice ();
 
 function playRound (pChoice,cChoice) {
     if (pChoice === "rock" && cChoice === "Paper") {
