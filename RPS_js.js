@@ -38,6 +38,12 @@ function playRound (pChoice,cChoice) {
         return "Rest in pizza. Rock beats paper, choom."
     } else if (pChoice === "scissors" && cChoice === "Paper") {
         return "Nice, choom. Scissors beat Paper"
+    } else if (pChoice === "rock" && cChoice === "Rock") {
+        return "Tie. Sudden death, maybe?"
+    } else if (pChoice === "paper" && cChoice === "Paper") {
+        return "Tie. Sudden duel, maybe?"
+    } else if (pChoice === "scissors" && cChoice === "Scissors") {
+        return "Tie. Sudden draw, maybe?"
     }
 }
 
