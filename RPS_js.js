@@ -64,7 +64,7 @@ function playGame (result) {
         } else if (result === "Nice try, goomba, but paper beats rock." || result === "Damn. Nice try, but scissors beats paper." || result === "Rest in pizza. Rock beats scissors, choom.") { 
             cScore++; return scoreNow
         } else if (result === "Tie. Sudden death, maybe?" || result === "Tie. Sudden duel, maybe?" || result === "Tie. Sudden draw, maybe?" ) {
-            return "Round was a tie..." + scoreNow
+            return "Round was a tie..." + " " + scoreNow
         } counter++
     } while (counter < 5) 
     
