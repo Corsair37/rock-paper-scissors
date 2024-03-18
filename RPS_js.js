@@ -50,4 +50,13 @@ function playRound (pChoice,cChoice) {
 }
 
 let result = playRound (pChoice,cChoice);
-console.log(result)
+
+let counter = 0;
+
+function playGame (result) {
+    do {
+        result;
+        counter++;
+    } while (counter < 5)
+    
+}
