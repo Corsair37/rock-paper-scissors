@@ -54,15 +54,15 @@ let result = playRound (pChoice,cChoice);
 let counter = 0;
 let pScore = 0;
 let cScore = 0;
+let scoreNow = "Player:" + " " + pScore + "Bot:" + " "  + cScore;
 
 function playGame (result) {
     do {
         result;
-        counter++;
         if (result === "Good stuff, choom. Rock beats scissors." || "Preem, choom. Paper beats rock." || "Nice, choom. Scissors beat Paper"){
-            pScore++;
+            pScore++;  return scoreNow
         } else if (result === "Nice try, goomba, but paper beats rock." || "Damn. Nice try, but scissors beats paper." || "Rest in pizza. Rock beats scissors, choom.") {
-            cScore++;
+            cScore++; return scoreNow
         } if (pScore === 3) {
             return "You win!" 
         } else if (cScore === 3) {
