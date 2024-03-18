@@ -60,9 +60,9 @@ function playGame (result) {
     do {
         result;
         if (result === "Good stuff, choom. Rock beats scissors." || result === "Preem, choom. Paper beats rock." || result === "Nice, choom. Scissors beat Paper"){
-            pScore++;  return scoreNow
+            pScore + 1 ;  return scoreNow
         } else if (result === "Nice try, goomba, but paper beats rock." || result === "Damn. Nice try, but scissors beats paper." || result === "Rest in pizza. Rock beats scissors, choom.") { 
-            cScore++; return scoreNow
+            cScore + 1; return scoreNow
         } else if (result === "Tie. Sudden death, maybe?" || result === "Tie. Sudden duel, maybe?" || result === "Tie. Sudden draw, maybe?" ) {
             return "Round was a tie..." + " " + scoreNow
         } counter++
