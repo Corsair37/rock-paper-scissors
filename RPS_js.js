@@ -67,7 +67,7 @@ function playGame (result) {
             return "You win!" 
         } else if (cScore === 3) {
             return "You lose!"
-        }
+        } counter++
     } while (counter < 5)
    
 }
