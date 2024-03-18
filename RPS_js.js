@@ -52,11 +52,23 @@ function playRound (pChoice,cChoice) {
 let result = playRound (pChoice,cChoice);
 
 let counter = 0;
+let pScore = 0;
+let cScore = 0;
 
 function playGame (result) {
     do {
         result;
         counter++;
     } while (counter < 5)
-    
+    if (result === "Good stuff, choom. Rock beats scissors." || "Preem, choom. Paper beats rock." || "Nice, choom. Scissors beat Paper"){
+        pScore++;
+    } else if (result === "Nice try, goomba, but paper beats rock." || "Damn. Nice try, but scissors beats paper." || "Rest in pizza. Rock beats scissors, choom.") {
+        cScore++;
+    } if (pScore === 3) {
+        return "You win!" 
+    } else if (cScore === 3) {
+        return "You lose!"
+    }
 }
+
+console.log(playGame(result))
