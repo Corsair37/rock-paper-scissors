@@ -59,16 +59,17 @@ function playGame (result) {
     do {
         result;
         counter++;
+        if (result === "Good stuff, choom. Rock beats scissors." || "Preem, choom. Paper beats rock." || "Nice, choom. Scissors beat Paper"){
+            pScore++;
+        } else if (result === "Nice try, goomba, but paper beats rock." || "Damn. Nice try, but scissors beats paper." || "Rest in pizza. Rock beats scissors, choom.") {
+            cScore++;
+        } if (pScore === 3) {
+            return "You win!" 
+        } else if (cScore === 3) {
+            return "You lose!"
+        }
     } while (counter < 5)
-    if (counter === 5 && result === "Good stuff, choom. Rock beats scissors." || "Preem, choom. Paper beats rock." || "Nice, choom. Scissors beat Paper"){
-        pScore++;
-    } else if (counter === 5 && result === "Nice try, goomba, but paper beats rock." || "Damn. Nice try, but scissors beats paper." || "Rest in pizza. Rock beats scissors, choom.") {
-        cScore++;
-    } if (pScore === 3) {
-        return "You win!" 
-    } else if (cScore === 3) {
-        return "You lose!"
-    }
+   
 }
 
 console.log(playGame(result))
