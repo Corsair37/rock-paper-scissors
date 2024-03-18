@@ -61,15 +61,19 @@ function playGame (result) {
         result;
         if (result === "Good stuff, choom. Rock beats scissors." || result === "Preem, choom. Paper beats rock." || result === "Nice, choom. Scissors beat Paper"){
             pScore++;  return scoreNow
-        } else if (result === "Nice try, goomba, but paper beats rock." || result === "Damn. Nice try, but scissors beats paper." || result === "Rest in pizza. Rock beats scissors, choom.") {
+        } else if (result === "Nice try, goomba, but paper beats rock." || result === "Damn. Nice try, but scissors beats paper." || result === "Rest in pizza. Rock beats scissors, choom.") { 
             cScore++; return scoreNow
-        } if (pScore === 3) {
-            return "You win!" 
-        } else if (cScore === 3) {
-            return "You lose!"
+        } else if (result === "Tie. Sudden death, maybe?" || result === "Tie. Sudden duel, maybe?" || result === "Tie. Sudden draw, maybe?" ) {
+            return "Round was a tie..." + scoreNow
         } counter++
-    } while (counter < 5)
-   
+    } while (counter < 5) 
+    
+    if (counter === 5) {
+        if (pScore === 3) {
+            return "Victory!"
+        } else if (cScore === 3)
+            return "Defeat... Try again?"
+    }
 }
 
 console.log(playGame(result))
