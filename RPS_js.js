@@ -54,7 +54,7 @@ let result = playRound (pChoice,cChoice);
 let counter = 0;
 let pScore = 0;
 let cScore = 0;
-let scoreNow = "Player:" + " " + pScore + "Bot:" + " "  + cScore;
+let scoreNow = "Player:" + " " + pScore + " " + "Bot:" + " "  + cScore;
 
 function playGame (result) {
     do {
