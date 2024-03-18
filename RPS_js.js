@@ -59,9 +59,9 @@ let scoreNow = "Player:" + " " + pScore + " " + "Bot:" + " "  + cScore;
 function playGame (result) {
     do {
         result;
-        if (result === "Good stuff, choom. Rock beats scissors." || "Preem, choom. Paper beats rock." || "Nice, choom. Scissors beat Paper"){
+        if (result === "Good stuff, choom. Rock beats scissors." || result === "Preem, choom. Paper beats rock." || result === "Nice, choom. Scissors beat Paper"){
             pScore++;  return scoreNow
-        } else if (result === "Nice try, goomba, but paper beats rock." || "Damn. Nice try, but scissors beats paper." || "Rest in pizza. Rock beats scissors, choom.") {
+        } else if (result === "Nice try, goomba, but paper beats rock." || result === "Damn. Nice try, but scissors beats paper." || result === "Rest in pizza. Rock beats scissors, choom.") {
             cScore++; return scoreNow
         } if (pScore === 3) {
             return "You win!" 
