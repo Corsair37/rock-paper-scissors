@@ -1,11 +1,11 @@
 let playerChoice = prompt("Rock, Paper, or Scissors?")
 function getPlayerChoice (playerChoice) {
     let shortstack = playerChoice.toLowerCase();
-    if (shortstack = "rock") {
+    if (shortstack === "rock") {
         return "rock"
-    } else if (shortstack = "paper") {
+    } else if (shortstack === "paper") {
         return "paper"
-    } else if (shortstack = "scissors"){
+    } else if (shortstack === "scissors"){
         return "scissors"
     }
 }
@@ -24,6 +24,8 @@ function getComputerChoice () {
 
 let pChoice = getPlayerChoice (playerChoice);
 let cChoice = getComputerChoice ();
+
+
 
 function playRound (pChoice,cChoice) {
     if (pChoice === "rock" && cChoice === "Paper") {
