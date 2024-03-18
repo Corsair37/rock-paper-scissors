@@ -71,9 +71,9 @@ function playGame (result) {
     
     if (counter === 5) {
         if (pScore === 3) {
-            return "Victory!"
+            return "You win!"
         } else if (cScore === 3)
-            return "Defeat... Try again?"
+            return "You lose!"
     }
 
 
