@@ -60,9 +60,9 @@ function playGame (result) {
         result;
         counter++;
     } while (counter < 5)
-    if (result === "Good stuff, choom. Rock beats scissors." || "Preem, choom. Paper beats rock." || "Nice, choom. Scissors beat Paper"){
+    if (counter === 5 && result === "Good stuff, choom. Rock beats scissors." || "Preem, choom. Paper beats rock." || "Nice, choom. Scissors beat Paper"){
         pScore++;
-    } else if (result === "Nice try, goomba, but paper beats rock." || "Damn. Nice try, but scissors beats paper." || "Rest in pizza. Rock beats scissors, choom.") {
+    } else if (counter === 5 && result === "Nice try, goomba, but paper beats rock." || "Damn. Nice try, but scissors beats paper." || "Rest in pizza. Rock beats scissors, choom.") {
         cScore++;
     } if (pScore === 3) {
         return "You win!" 
