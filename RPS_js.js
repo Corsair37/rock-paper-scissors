@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let playerChoices = document.querySelectorAll(".btn");
     let playRock = playerChoices[0];
     let playPaper = playerChoices[1];
-    let playScissors = playerChoices[2];
 
     playerChoices.forEach(playerChoice => {
         playerChoice.addEventListener("click", () => {
