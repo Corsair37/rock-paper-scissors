@@ -1,2 +1,2 @@
-﻿name: Rock-Paper-Scissors.corsair
-link: https://www.fontspace.com/collection/rock-paper-scissorscorsair-cmqej8p
+﻿license: Freeware
+link: https://www.fontspace.com/bloc-tek-font-f44472
