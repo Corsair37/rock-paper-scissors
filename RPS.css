@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "AwareBold";
+    src: url(AwareBold-qZo3x.ttf);
+}
+
+@font-face {
+    font-family: "BlocTek";
+    src: url(BlocTekRegular-gxEZ4.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: "BlocTek", sans-serif; 
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+}
+
+h1, .btn, #result{
+    display: flex;
+    justify-content: center;
+    font-family: "BlocTek", sans-serif; 
+    color: ghostwhite;
+    animation: colorChange 5s infinite;
+}
+
+.oBox {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 20px;
+    height: auto; 
+    border: 4px solid black;
+    color: ghostwhite;
+    font-family: "AwareBold", sans-serif; 
+    font-size: 18px; 
+    background-color: transparent; 
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "BlocTek", sans-serif; 
+    font-size: 24px; 
+    margin-top: 20px; 
+    padding: 10px 20px;
+    border: 4px solid black;
+    background-color: transparent; 
+}
