@@ -1,7 +1,23 @@
-function getPlayerChoice() {
-    let playerChoice = prompt("Rock, Paper, or Scissors?");
-    return playerChoice.toLowerCase();
-}
+let playerChoices = document.querySelectorAll(".btn");
+let playRock = playerChoices[0];
+let playPaper = playerChoices[1];
+let playScissors = playerChoices[2];
+let choice;
+
+playerChoices.forEach(playerChoice => {
+    playerChoice.addEventListener("click", () => {
+        if (playerChoice === playRock) {
+            choice = "rock";
+        } else if (playerChoice === playPaper) {
+            choice = "paper";
+        } else {
+            choice = "scissors";
+        }
+        console.log("Player choice:", choice);
+        
+    });
+});
+
 
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
@@ -10,16 +26,15 @@ function getComputerChoice() {
 
 let pScore = 0;
 let cScore = 0;
-let pChoice = getPlayerChoice();
 let cChoice = getComputerChoice(); 
 
-function playRound(pChoice, cChoice) {
-    if (pChoice === cChoice) {
+function playRound(choice, cChoice) {
+    if (choice === cChoice) {
         return "Draw!";
     } else if (
-        (pChoice === "rock" && cChoice === "scissors") ||
-        (pChoice === "paper" && cChoice === "rock") ||
-        (pChoice === "scissors" && cChoice === "paper")
+        (choice === "rock" && cChoice === "scissors") ||
+        (choice === "paper" && cChoice === "rock") ||
+        (choice === "scissors" && cChoice === "paper")
     ) {
         pScore++;
         return "Player wins!";
@@ -31,9 +46,9 @@ function playRound(pChoice, cChoice) {
 
 for (let i = 0; i < 5; i++) { 
     let cChoice = getComputerChoice();
-    console.log("Player chose: " + pChoice);
+    console.log("Player chose: " + choice);
     console.log("Computer chose: " + cChoice);
-    console.log(playRound(pChoice, cChoice));
+    console.log(playRound(choice, cChoice));
 }
 
 
